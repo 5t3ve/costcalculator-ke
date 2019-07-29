@@ -1,7 +1,4 @@
 import React from 'react';
-
-
-
 import './App.css';
 import {Navbar, Nav, Tabs, Tab, Table, Form, Button} from 'react-bootstrap';
 
@@ -57,9 +54,12 @@ class App extends React.Component {
     else if (this.state.username <= 70000) {
       val = 105;
     } 
+    else if (this.state.username > 70000) {
+      val = "ammount exceeds maximum transaction allowed";
+    } 
     
     else {
-      val = '';
+      val = 'please enter numbers';
     }
     return (
     
@@ -115,22 +115,22 @@ class App extends React.Component {
               <tr>
                 <td>2</td>
                 <td>Sending to Other Mobile Money Users</td>
-                <td>Mark</td>
+                <td>x</td>
               </tr>
               <tr>
                 <td>3</td>
                 <td>Transfer to Unregistered Users </td>
-                <td>Mark</td>
+                <td>x</td>
               </tr>
               <tr>
                 <td>4</td>
                 <td>Mpesa Agent Withdrawal </td>
-                <td>Mark</td>
+                <td>x</td>
               </tr>
               <tr>
                 <td>5</td>
                 <td>ATM Withdrawal </td>
-                <td>Mark</td>
+                <td>x</td>
               </tr>
               
             </tbody>
@@ -138,7 +138,7 @@ class App extends React.Component {
             
           </Tab>
           <Tab eventKey="kplc" title="Kplc">
-            <p>meeee</p>
+            <p>coming soon</p>
             
           </Tab>
           
