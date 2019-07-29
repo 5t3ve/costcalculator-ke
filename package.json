@@ -16,7 +16,7 @@
     "react-scripts": "3.0.1",
     "source-map-explorer": "^2.0.1"
   },
-  "homepage": "https://github.com/5t3ve",
+  "homepage": "https://github.com/5t3ve/costcalculator-ke.git",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",

@@ -90,7 +90,7 @@ class App extends React.Component {
             <Form.Control type="text" onChange={this.myChangeHandler} placeholder="Enter ammount " />
           </Form.Group>
           <Form.Group controlId="calculate">
-           <Button variant="dark"> Calculate </Button>
+           <Button variant="dark" href=""> Calculate </Button>
           </Form.Group>
         </Form>
 
