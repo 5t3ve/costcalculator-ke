@@ -1,70 +1,15 @@
-import React from 'react';
+import React,{Component} from 'react';
 
 
-
-import './App.css';
+import '../App.css';
 import {Navbar, Nav, Tabs, Tab, Table, Form, Button} from 'react-bootstrap';
+import Calcs from './calcs';
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { username: '' };
-  }
-  myChangeHandler = (event) => {
-    
-    this.setState({username: event.target.value});
-  }
-
-
-  render() {
-    let val = '';
-    if (this.state.username <= 0) {
-      val = '';
-    } 
-    else if (this.state.username <= 100) {
-      val = "FREE";
-    } 
-    else if (this.state.username <= 500) {
-      val = 11;
-    } 
-    else if (this.state.username <= 1000) {
-      val = 15;
-    } 
-    else if (this.state.username <= 1500) {
-      val = 26;
-    } 
-    else if (this.state.username <= 2500) {
-      val = 41;
-    } 
-    else if (this.state.username <= 3500) {
-      val = 56;
-    } 
-    else if (this.state.username <= 5000) {
-      val = 61;
-    } 
-    else if (this.state.username <= 7500) {
-      val = 77;
-    } 
-    else if (this.state.username <= 10000) {
-      val = 87;
-    } 
-    else if (this.state.username <= 15000) {
-      val = 97;
-    } 
-    else if (this.state.username <= 20000) {
-      val = 102;
-    }
-    else if (this.state.username <= 70000) {
-      val = 105;
-    } 
-    
-    else {
-      val = '';
-    }
-    return (
-    
-    <div className="App">
-  
+export class Home extends Component  {
+    render(){
+        return (
+    <div className="home">
+        
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Navbar.Brand href="#home">Cost Calculator KE</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -158,4 +103,4 @@ class App extends React.Component {
   );
 }
 }
-export default App;
+export default Home;
