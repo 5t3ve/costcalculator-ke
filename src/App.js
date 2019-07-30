@@ -167,7 +167,7 @@ class App extends React.Component {
      
       <div className="container Justify-content-center">
         <div className="jumbotron">
-          <h2>Welcome to the online Cost Calculator KE</h2>
+          <h2>Welcome to the online Mpesa Cost Calculator KE</h2>
           <p>Updated last July 26 2019</p>
           <Form inline className="justify-content-center">
           <Form.Group controlId="calculate">
@@ -222,18 +222,14 @@ class App extends React.Component {
           </Table>
             
           </Tab>
-          <Tab eventKey="kplc" title="Kplc">
-            <p>coming soon</p>
-            
-          </Tab>
+         
           
       </Tabs>
         </div>
       </div>
 
       <div className="jumbotron bg-dark jumbotron-fluid" id="footer">
-        <p id="dis">Disclaimer !! : We are not liable for any losses
-         that may arise for the use of this service</p>
+        
       
       <p id="copyr">All rights reserved | Cost Calculator KE 2019</p>
       </div>
