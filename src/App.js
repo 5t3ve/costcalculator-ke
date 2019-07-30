@@ -15,51 +15,136 @@ class App extends React.Component {
 
   render() {
     let val = '';
+    let val2 = '';
+    let val3 = '';
+    let val4 = '';
+    let val5 = '';
+
     if (this.state.username <= 0) {
       val = '';
+      val2 = '';
+      val3 = '';
+      val4 = '';
+      val5 = '';
     } 
     else if (this.state.username <= 100) {
       val = "FREE";
+      val2 = 'N/A';
+      val3 = 'N/A';
+      val4 = 'N/A';
+      val5 = '10';
+    } 
+    else if (this.state.username <= 199) {
+      val = 11;
+      val2 = 11;
+      val3 = 45;
+      val4 = 'N/A';
+      val5 = 27; 
     } 
     else if (this.state.username <= 500) {
       val = 11;
+      val2 = 11;
+      val3 = 45;
+      val4 = 34;
+      val5 = 27;
     } 
     else if (this.state.username <= 1000) {
       val = 15;
+      val2 = 15;
+      val3 = 49;
+      val4 = 34;
+      val5 = 28;
     } 
     else if (this.state.username <= 1500) {
       val = 26;
+      val2 = 26;
+      val3 = 59;
+      val4 = 34;
+      val5 = 28;
     } 
     else if (this.state.username <= 2500) {
       val = 41;
+      val2 = 41;
+      val3 = 74;
+      val4 = 34;
+      val5 =28;
     } 
     else if (this.state.username <= 3500) {
       val = 56;
+      val2 = 56;
+      val3 = 112;
+      val4 =67;
+      val5 =50;
     } 
     else if (this.state.username <= 5000) {
       val = 61;
+      val2 = 61;
+      val3 = 135;
+      val4 = 67;
+      val5 = 67;
     } 
     else if (this.state.username <= 7500) {
       val = 77;
+      val2 = 77;
+      val3 = 166;
+      val4 = 112;
+      val5 = 84;
     } 
     else if (this.state.username <= 10000) {
       val = 87;
+      val2 = 87;
+      val3 = 205;
+      val4 = 112;
+      val5 = 112;
     } 
     else if (this.state.username <= 15000) {
       val = 97;
+      val2 = 97;
+      val3 = 265;
+      val4 =197;
+      val5 = 162;
     } 
     else if (this.state.username <= 20000) {
       val = 102;
+      val2 = 102;
+      val3 = 288;
+      val4 = 197;
+      val5 = 180;
+    }
+    else if (this.state.username <= 35000) {
+      val = 105;
+      val2 =105;
+      val3 = 309;
+      val4 = 'N/A';
+      val5 = 191;
+    } 
+    else if (this.state.username <= 50000) {
+      val = 105;
+      val2 =105;
+      val3 = 'N/A';
+      val4 = 'N/A';
+      val5 = 191;
     }
     else if (this.state.username <= 70000) {
       val = 105;
+      val2 =105; 
+      val3 = 'N/A';
+      val4 = 'N/A';
+      val5 =300;
     } 
     else if (this.state.username > 70000) {
       val = "ammount exceeds maximum transaction allowed";
+      val2 = "ammount exceeds maximum transaction allowed";
+      val3 = "ammount exceeds maximum transaction allowed";
+      val4 = "ammount exceeds maximum transaction allowed";
+      val5 = "ammount exceeds maximum transaction allowed";
     } 
     
     else {
       val = 'please enter numbers';
+      val2 = 'please enter numbers';
+      val3 = 'please enter numbers';
+      val4 = 'please enter numbers';
     }
     return (
     
@@ -115,22 +200,22 @@ class App extends React.Component {
               <tr>
                 <td>2</td>
                 <td>Sending to Other Mobile Money Users</td>
-                <td>x</td>
+                <td>{val2}</td>
               </tr>
               <tr>
                 <td>3</td>
                 <td>Transfer to Unregistered Users </td>
-                <td>x</td>
+                <td>{val3}</td>
               </tr>
               <tr>
                 <td>4</td>
                 <td>Mpesa Agent Withdrawal </td>
-                <td>x</td>
+                <td>{val5}</td>
               </tr>
               <tr>
                 <td>5</td>
                 <td>ATM Withdrawal </td>
-                <td>x</td>
+                <td>{val4}</td>
               </tr>
               
             </tbody>
