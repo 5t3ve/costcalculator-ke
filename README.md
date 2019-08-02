@@ -1,5 +1,5 @@
-This project is an Mpesa and Kplc cost calculator,it will 
-help to calculate all your mpesa transaction and kplc charges
+This project is an Mpesa cost calculator,it will 
+help to calculate all your mpesa transaction  charges
 
 ## Available Scripts
 
